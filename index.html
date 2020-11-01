@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Clover Protocol</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta property="og:title" content="Clover Protocol (CLV)" />
+      <meta property="og:url" content="https://clover.rocks" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Incredible things happen when there's a community of individuals with similar values from a similar place who all have an economic incentive to see the project thrive. DeFi, fair launches and airdrops have proven to be very interesting and beyond the scams/pump'n'dumps there is something genuinely interesting here." />
+      <meta property="og:image" content="https://clv.surge.sh/logo.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	  
+	  <script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'cloverprotocol.myshopify.com',
+      storefrontAccessToken: '6adaa5abffee8b5ee40b64e78f8eac7e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '232855142576',
+        node: document.getElementById('collection-component-1604180509996'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "color": "#ffffff"
+      },
+      "button": {
+		"color": "#13e870",
+		"border": "1px solid #007bff",
+        "background-color": "rgba(0,0,0,0)",					
+        ":hover": {
+          "background-color": "#007bff"
+        },
+        ":focus": {
+          "background-color": "#007bff"
+        }
+      },
+      "price": {
+        "color": "#ffffff"
+      },
+      "compareAt": {
+        "color": "#ffffff"
+      },
+      "unitPrice": {
+        "color": "#ffffff"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#006185"
+        },
+        "background-color": "#00394e",
+        ":focus": {
+          "background-color": "#006185"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#006185"
+        },
+        "background-color": "#00394e",
+        ":focus": {
+          "background-color": "#006185"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#00394e",
+        ":hover": {
+          "background-color": "#006185"
+        },
+        ":focus": {
+          "background-color": "#006185"
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+	  
+   </head>
+   <body>
+      <!-- top navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bglight ">
+         <a class="nav-link text-white" href="index.html"><img src="media/logo.png" width="40" /> CloverProtocol.biz</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <!-- Uniswap -->
+                  <a target="_blank" href="https://uniswap.info/token/0x22222c03318440305ac3e8a7820563d6a9fd777f" role="button"><img src="media/uni.png" style="padding: 0px;padding-top: 2px;"></a>
+               </li>
+               <li class="nav-item">
+                  <!-- Coingecko -->
+                  <a target="_blank" href="https://www.coingecko.com/en/coins/clover" role="button"><img src="media/coingecko.png" style="padding: 0px;padding-top: 5px;"></a>
+               </li>
+               <li class="nav-item">
+                  <!-- telegram-->
+                  <a target="_blank" href="https://t.me/clvfi" class="" role="button"><i class="fab fa-telegram"></i></a>
+               </li>
+               <li class="nav-item">
+                  <!-- discord -->
+                  <a target="_blank" href="https://discord.gg/sbvNtBH" class="" role="button"><i class="fab fa-discord"></i></a>
+               </li>
+               <li class="nav-item">
+                  <!-- twitter -->
+                  <a target="_blank" href="https://twitter.com/clvfi" class="" role="button"><i class="fab fa-twitter"></i></a>
+               </li>
+               <!-- GIT -->
+               <li class="nav-item">
+                  <a target="_blank" href="https://github.com/clvfi" class="" role="button" title="Contract"><i class="fab fa-github"></i></a>
+               </li>
+               <!-- biz -->
+               <li class="nav-item">
+                  <a target="_blank" href="https://boards.4channel.org/biz/catalog#s=clv" class="text-white " role="button"><img src="media/4chan.png" style="padding: 0px;padding-top: 5px;"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- End top bar-->		
+      <!-- animated css bg-->		
+      <div class="area" >
+         <ul class="circles">
+            <li><img src="media/bg/logo.png" width="50px"></li>
+            <li><img src="media/bg/sminem.png" width="50px"></li>
+            <li><img src="media/bg/sminem.png" width="50px"></li>
+            <li><img src="media/bg/tad.png" width="50px"></li>
+            <li><img src="media/bg/bog.png" width="50px"></li>
+            <li><img src="media/bg/logo.png" width="50px"></li>
+            <li><img src="media/bg/bog.png" width="50px"></li>
+            <li><img src="media/bg/tad.png" width="50px"></li>
+         </ul>
+      </div >
+      <div class="main-clv m-2">
+         <!-- Link Tabs-->
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Protocol</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="what-tab" data-toggle="tab" href="#what" role="tab" aria-controls="what" aria-selected="false">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="ecosystem-tab" data-toggle="tab" href="#ecosystem" role="tab" aria-controls="ecosystem" aria-selected="false">Ecosystem</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="tokenomics-tab" data-toggle="tab" href="#tokenomics" role="tab" aria-controls="tokenomics" aria-selected="false">Tokenomics</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="swag-tab" data-toggle="tab" href="#swag" role="tab" aria-controls="contact" aria-selected="false">Swag</a>
+            </li>
+         </ul>
+         <!-- Tab content-->
+         <div class="tab-content mt-2" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               <div class="row text-center">
+                  <div class="col-lg">
+                     <h1>Clover Protocol</h1>
+                     <h5><i>Come for the money, stay for the lulz</i></h5>
+                     <br>
+                     <img src="media/logo.png" class="logoimg" id="loading"  />
+                     <br>
+                     <div class="row">
+                        <!-- governance-->
+                        <div class="col-sm-12 col-lg-12 mt-3 text-center ">
+                           <a href="https://clv2d.clover.rocks" class="btn btn-outline-primary" role="button">CLV2D</a>
+                           <a href="https://clv3d.clover.rocks" class="btn btn-outline-primary" role="button">CLV3D</a>
+                           <p></p>
+                           <a href="https://snapshot.page/#/clover" class="btn btn-outline-primary" role="button">Governance</a>
+                           <a href="https://uniswap.info/token/0x22222c03318440305ac3e8a7820563d6a9fd777f" class="btn btn-outline-primary" role="button">UniSwap</a>
+                           <a href="http://dextools.io/app/uniswap/pair-explorer/0x1a455b43e185ecc80b4118a47255bf97cde976fe" class="btn btn-outline-primary" role="button">DexTools</a>
+                           <a href="https://app.astrotools.io/pair-explorer/0x1a455b43e185ecc80b4118a47255bf97cde976fe" class="btn btn-outline-primary" role="button">AstroTools</a>
+                           <a href="https://chartex.pro/?symbol=UNISWAP:CLV" class="btn btn-outline-primary" role="button">ChartEX</a>
+                           <p></p>
+                           <a href="#" id="addToWallet" class="btn btn-outline-primary" role="button">Add CLV to MetaMask</a>
+                           <a href="#" id="addC2DToWallet" class="btn btn-outline-primary" role="button">Add C2D to MetaMask</a>
+                           <a href="#" id="addC3DToWallet" class="btn btn-outline-primary" role="button">Add C3D to MetaMask</a>
+                           <br/>
+                           <p>Token Address: <a href="https://etherscan.io/address/0x22222c03318440305ac3e8a7820563d6a9fd777f">0x22222C03318440305aC3e8a7820563d6A9FD777F</a></p>
+                           <center>Trust the plan.</center>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="what-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>What is Clover?</h2>
+                     <p class="mt-5">A completely /biz/-run DeFi project. The network is governed by token owners, with a distribution as widely within the /biz/ community as possible via the fair launch. As chainlinkers understand that the financial system is slowly but surely becoming like LEGO bricks, there is opportunity at the edges to innovate as the bull run for Bitcoin, DeFi and daily /biz/ volume itself draw near</p>
+                     <p class="mt-5">Incredible things happen when there's a community of individuals with similar values from a similar place who all have an economic incentive to see the project thrive. DeFi, fair launches and airdrops have proven to be very interesting and beyond the scams/pump'n'dumps there is something genuinely interesting here.</p>
+                     <p class="mt-5">If the Dogecoin community can fund a Jamaican Bobsled team or a Nascar driver, I'm sure the /biz/ community can do even better.</p>
+                     <br>
+                     <img src="media/clover_website_img_flat.png" class="w-100"><br><br><br>
+                     <center>Trust the plan.</center>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="ecosystem" role="tabpanel" aria-labelledby="ecosystem-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Clover Ecosystem & Network Effect</h2>
+                     <p>The Clover network has meme'd itself into reality by creating a blackhole of liquidity. A strictly scarce token that is locked up or burnt in all future game contracts</p>
+                     <p>As new projects emerge that want /biz/ exposure, they will airdrop to the existing Clover holder set for free publicity comparable to the UNI airdrop or OMG airdrop in 2017.</p>
+                     <p>Devs make new game-theory tokens airdropped to Clover holders by main dev and others (think PoWH or FOMO3D but with Clover tokens and/or profits being airdropped to CLV uniswap liquidity providers).</p>
+                     <p>New Financial games/experiments within /biz/ for immediate exposure (think shrimp.finance airdropped to Clover holders). Clover will be the base token for future game theory tokens/meme defi/yield farm games played within /biz/.
+                     <p>The ability to earn untradeable points when you stake CLV in specific pools(opportunity cost now as a game mechanic) with points being spent on unique low supply /biz/ NFT's and game pieces. Oldfags that stake for longer will provably be oldfags since points cannot be bought.</p>
+                     <p>/biz/ members are incentivized to hold a few Clovers for fun and to show they have skin in the game for the board, with the ability to influence votes within the community.</p>
+                     <br><br><br>
+                     <center>Trust the plan.</center>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="tokenomics" role="tabpanel" aria-labelledby="tokenomics-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Tokenomics</h2>
+                     No presale/OTC. No dev fund. No admin who owns 15% of the tokens. 100% fair distribution to /biz/ by design.<br/>
+                     The token was dropped to 542 /biz/ users, getting 41 CLV each making the total supply 22,222<br/>
+                     Goal is to get into as many OG /biz/oid hands as possible and create a community/DAO of truth.<br/>
+                     The only existing dev fund is the funds donated by the holders to the dev for future updates.
+                     <br/><br/>
+                     <b>Maximum Supply:</b> 22,222 CLV<br/>
+                     <b>Circulation Supply:</b> 21369.585591 CLV<br/>
+                     <b>Burned:</b> 852.414409 CLV (3.8359%)<br/><br/>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Protocol Safety</h2>
+                     The only way to get tokens is to purchase them off of uniswap or to stake CLV. All the CLV tokens that will ever exist are already minted, minting has been disabled and the admin key burned. No one can mint any new tokens or drain the liquidity pools. The liquidity pool is completely community funded, unless all holders decide to pull their liquidity a rug pull is impossible. Put your CLV in the LP if you want to contribute to the safety of the protocol. There are no rug pulls under this new paradigm.
+                  </div>
+               </div>
+               <br/>
+               <br/>
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Transactions & Addresses</h2>
+                     <table class="table table-sm table-striped table-bordered table-hover">
+                        <tbody>
+                           <tr>
+                              <td>📃 <span class="text-monospace">Contract Address</span></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/address/0x22222c03318440305ac3e8a7820563d6a9fd777f">0x22222C03318440305aC3e8a7820563d6A9FD777F</a></td>
+                           </tr>
+                           <tr>
+                              <td>🔑 <span class="text-monospace">Set Owner as Minter</span></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7">0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7</a></td>
+                           </tr>
+                           <tr>
+                              <td>🍀 <span class="text-monospace">Mint 22,222 CLV</span></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b">0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b</a></td>
+                           </tr>
+                           <tr>
+                              <td>🔥 <span class="text-monospace">Remove Owner as Minter</span></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216">0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216</a></td>
+                           </tr>
+                           <tr>
+                              <td>🔥 <span class="text-monospace">Burn Owner Address</span></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b">0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b</a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <br/>
+               <br/>
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Research Topics & Future Projects within Clover</h2>
+                     <ul>
+                        <li>DAO on Aragon ERC721-backed tokens</li>
+                        <li>Decentralized voting, ex "Is XXX a shitcoin? Y/N" with skin in the game for voters/participants. A decentralized source of truth for /biz/.</li>
+                        <li>Prediction markets like "Will <span class="text-monospace">$LINK</span> hit $1000 EOY?" with CLV as the native voting token</li>
+                        <li>/biz/-run treasury that can earn yield and run trading competitions or distribute rewards to CLV/LP holders.</li>
+                        <li>Game-theory tokens (ex log2/xamp-like rebase) that can only be earned by staking CLV, and trade against CLV to allow token holders to provide liquidity to degenerates who believe they can outsmart/out-trade other degenerates</li>
+                        <li>PoWH / FOMO3D featuring CLV as either the base token or airdrop the revenue to existing CLV/LP holders</li>
+                        <li>Non-Fungible Tokens to commemorate significant events in /biz/ history</li>
+                        <li>A Clover treasury that can earn yield on its holdings and airdrop the yield returns to CLV holders or LP providers</li>
+                        <li>Token games that all incentivize the burning or locking up of CLV. Provably fair 50/50 staking/gambling if ETH zk-rollups actually work (vitalik pls)</li>
+                        <li>Private channels that can validate members have over X amount of CLV to weed out plebs</li>
+                        <li>possible Chrome/Firefox extension that lets you +1/-1 threads based on your percentage ownership of the tokens, let you sort threads by Clover weightings. Wisdom of the crowd for the board</li>
+                        <li>Stablecoin liquidity pools, cross-chain CLV (BEP-2 Binance DEX bridge) - 1,000 BNB</li>
+                     </ul>
+                  </div>
+               </div>
+					<br><br><br>
+					<center>Trust the plan.</center>
+            </div>
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Contact</h2>
+                     <pre>
+Email: admin@clover.rocks
+PGP Fingerprint: 4A9E 6EAB C53B 6579 68D7 1D21 5512 1837 38CD 4026
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xsBNBF9zxtABCAC2VOy+f2qOasDmEcS/miRImRU/17ERoNVLMPqFJMcL7Vw3
+3hAjXhPFGedWnGwGy1a2u909741rLuOj5wpxL09sLld6k6av9zJddUROmHgK
+3bLWHkENOfHZ7PMbXW+ykJzuRQkJz5aHb0ATguwRkwvP577KUekaDPAgqGfQ
+/McEeSNbMltOKpUyh8U2ykFZcQ4zm97JZpghkaoaZG3qIloc3qJVLHBRqPua
+xrZVmifxF3VH4KLHtzTdnDrvUurm0K9RKf/sGRSbnsfBuiIo4NpA7MU0myfB
+fpThmhgbp2OUx6CecbrImyf9WMCeto04cNkOF1Kefbv0uQ7bhGBrlnaXABEB
+AAHNH2Nsb3ZlcmZpQHBtLm1lIDxjbG92ZXJmaUBwbS5tZT7CwI0EEAEIACAF
+Al9zxtAGCwkHCAMCBBUICgIEFgIBAAIZAQIbAwIeAQAhCRBVEhg3OM1AJhYh
+BEqebqvFO2V5aNcdIVUSGDc4zUAmj5AH/2p2DWPsxNQZEzDHWvouojAE16Nn
+i4jMyWKUkPlSug8QjTaGhT3dXHw+vLNuYy+0E1Np1vKXKi5W3UY/nFH4Q6nI
+q/ct5MIJXZYlggUuOehbLQDWUHYjXeI08UzaVvDAfCm441TjBYe2y4/cmDMy
+0b64Z4yJmrHmz9AskPapidi1tQMIiqmxa8iTCRcM7ScHvcj4H8lOKbkIuAZB
+pg1yniedJQjIss4NgCztXN3pWctppJUZPyVS8CbLrFzAxwwWXlvaLEJpKtTz
+lzuiHmBQ5MfqunN8ifDReX6XmJMwO/8V6jP+5ZkzjPHDbaW0aHLjBGvMqNAv
+zRS78ZukvJMzZovOwE0EX3PG0AEIAKTAnRPhDy1GRgD3Hz7ASfvllM3Zqwe6
+qT7I7R8HtVbbN7xzTLtK72fnGsdPXAOMiUGl4Azx85202xx9WaqcNZS7mhCP
+g2Yez3PrHvKhocHGo8f7HxBoNWAhYCJgT5NX3JPhQ9yKIHtjgL5u0bdm/LaN
+UTIk3FLr2EQEanJjbNh9jF31fYz0+TVaNYQjFKgcqc+NAF29bmGJjkKJrjH2
+E0oauKR+PfU0thFeEjSPI2lV8CWKoATjebzag9VIQrmIjvs9EiChlgdGYPQ9
+TbhagZRL4mckbqjxiufl8sTfYVTuBNJx7UlHGDymg2hQDqbSnBaKwzLjAvxS
+YlPwU4UO4Q8AEQEAAcLAdgQYAQgACQUCX3PG0AIbDAAhCRBVEhg3OM1AJhYh
+BEqebqvFO2V5aNcdIVUSGDc4zUAmufoIAK/rSEC1z2qy8Jz1jDXAldGK009P
+KKoH3IcKtjLuAxU1FMQ7otGpRMg0kSAMdLhMGj+g4kJooIVwMSQ8TFtsUshv
+Wc8m/OzhnBuzjFt4YsGOSDGqQJvTo2fVdGbs/XT6cSdRDR5p9yuP6krtlSXW
+wRXrEB4W58gx/dTr/yOY6img1iasZiphRIwA3uRPHOdgKoi+bMKzSRCHFbOt
+g5K8dhY0u3GRBTVMtLuyQA15Ghf3oSlHXpqj9Okc7bwRijyq2Dnjvr75/W5c
+kbPXmOrZU/ffvuA8WQAwSFCn7LzsmUrf5DHp8FoB0kWuIaEYmVcYQHUPZHOq
+V0rPj8aADYGbaKU=
+=nj6g
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
+					<br><br><br>
+                    <center>Trust the plan.</center>
+                  </div>
+               </div>
+            </div>
+			<div class="tab-pane fade" id="swag" role="tabpanel" aria-labelledby="swag-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2>Swag</h2>
+					<br>
+					<div id='collection-component-1604180509996'></div>
+					<br><br><br>
+                    <center>Trust the plan.</center>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js" integrity="sha512-ppuvbiAokEJLjOUQ24YmpP7tTaLRgzliuldPRZ01ul6MhRC+B8LzcVkXmUsDee7ne9chUfApa9/pWrIZ3rwTFQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $( "#addToWallet" ).click(function(){ addToWallet(); });
+         function addToWallet(){
+         	ethereum.enable();
+         	try {
+         		window.ethereum.sendAsync({
+         			method: 'wallet_watchAsset',
+         			params: {
+         				'type': 'ERC20',
+         				'options': {
+         					'address': '0x22222c03318440305ac3e8a7820563d6a9fd777f',
+         					'symbol': 'CLV',
+         					'decimals': '6',
+         					'image': 'https://clv.surge.sh/logo.png',
+         				},
+         			},
+         			id: Math.round(Math.random() * 100000)
+         		}, function (err, data) {
+         			if (!err) {
+         				if (data.result) {
+         					console.log('Token added to wallet.');
+         				} else {
+         					console.log(data);
+         					console.log('Some error');
+         				}
+         			} else {
+         				console.log(err.message);
+         			}
+         		});
+         	} catch (e) {
+         		console.log(e);
+         	}
+         }
+         $( "#addC2DToWallet" ).click(function(){ addC2DToWallet(); });
+         function addToWallet(){
+         	ethereum.enable();
+         	try {
+         		window.ethereum.sendAsync({
+         			method: 'wallet_watchAsset',
+         			params: {
+         				'type': 'ERC20',
+         				'options': {
+         					'address': '0xc744dc036f42c2538d63eca6348e2066e183279e',
+         					'symbol': 'C2D',
+         					'decimals': '18',
+         					'image': 'https://clv.surge.sh/logo.png',
+         				},
+         			},
+         			id: Math.round(Math.random() * 100000)
+         		}, function (err, data) {
+         			if (!err) {
+         				if (data.result) {
+         					console.log('Token added to wallet.');
+         				} else {
+         					console.log(data);
+         					console.log('Some error');
+         				}
+         			} else {
+         				console.log(err.message);
+         			}
+         		});
+         	} catch (e) {
+         		console.log(e);
+         	}
+         }
+         $( "#addC3DToWallet" ).click(function(){ addC3DToWallet(); });
+         function addToWallet(){
+         	ethereum.enable();
+         	try {
+         		window.ethereum.sendAsync({
+         			method: 'wallet_watchAsset',
+         			params: {
+         				'type': 'ERC20',
+         				'options': {
+         					'address': '0xd7e09f594855e7dd89dce2747d7b6953b2ea474c',
+         					'symbol': 'C3D',
+         					'decimals': '18',
+         					'image': 'https://clv.surge.sh/logo.png',
+         				},
+         			},
+         			id: Math.round(Math.random() * 100000)
+         		}, function (err, data) {
+         			if (!err) {
+         				if (data.result) {
+         					console.log('Token added to wallet.');
+         				} else {
+         					console.log(data);
+         					console.log('Some error');
+         				}
+         			} else {
+         				console.log(err.message);
+         			}
+         		});
+         	} catch (e) {
+         		console.log(e);
+         	}
+         }
+      </script>
+   </body>
+</html>
