@@ -157,7 +157,9 @@ a{
     animation-delay: 15s;
     animation-duration: 35s;
 }
-
+iframe{
+  min-height: 800px!important;
+}
 
 
 @keyframes animate {
