@@ -18,168 +18,166 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
-	  <script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'cloverprotocol.myshopify.com',
-      storefrontAccessToken: '6adaa5abffee8b5ee40b64e78f8eac7e',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('collection', {
-        id: '232855142576',
-        node: document.getElementById('collection-component-1604180509996'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px",
-          "width": "calc(25% - 20px)"
-        },
-        "img": {
-          "height": "calc(100% - 15px)",
-          "position": "absolute",
-          "left": "0",
-          "right": "0",
-          "top": "0"
-        },
-        "imgWrapper": {
-          "padding-top": "calc(75% + 15px)",
-          "position": "relative",
-          "height": "0"
-        }
-      },
-      "title": {
-        "color": "#ffffff"
-      },
-      "button": {
-		"color": "#13e870",
-		"border": "1px solid #007bff",
-        "background-color": "rgba(0,0,0,0)",
-        ":hover": {
-          "background-color": "#007bff"
-        },
-        ":focus": {
-          "background-color": "#007bff"
-        }
-      },
-      "price": {
-        "color": "#ffffff"
-      },
-      "compareAt": {
-        "color": "#ffffff"
-      },
-      "unitPrice": {
-        "color": "#ffffff"
-      }
-    },
-    "buttonDestination": "modal",
-    "contents": {
-      "options": false
-    },
-    "text": {
-      "button": "View product"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#006185"
-        },
-        "background-color": "#00394e",
-        ":focus": {
-          "background-color": "#006185"
-        }
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        ":hover": {
-          "background-color": "#006185"
-        },
-        "background-color": "#00394e",
-        ":focus": {
-          "background-color": "#006185"
-        }
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#00394e",
-        ":hover": {
-          "background-color": "#006185"
-        },
-        ":focus": {
-          "background-color": "#006185"
-        }
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-
+      <script type="text/javascript">
+         /*<![CDATA[*/
+         (function () {
+           var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+           if (window.ShopifyBuy) {
+             if (window.ShopifyBuy.UI) {
+               ShopifyBuyInit();
+             } else {
+               loadScript();
+             }
+           } else {
+             loadScript();
+           }
+           function loadScript() {
+             var script = document.createElement('script');
+             script.async = true;
+             script.src = scriptURL;
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+             script.onload = ShopifyBuyInit;
+           }
+           function ShopifyBuyInit() {
+             var client = ShopifyBuy.buildClient({
+               domain: 'cloverprotocol.myshopify.com',
+               storefrontAccessToken: '6adaa5abffee8b5ee40b64e78f8eac7e',
+             });
+             ShopifyBuy.UI.onReady(client).then(function (ui) {
+               ui.createComponent('collection', {
+                 id: '232855142576',
+                 node: document.getElementById('collection-component-1604180509996'),
+                 moneyFormat: '%24%7B%7Bamount%7D%7D',
+                 options: {
+           "product": {
+             "styles": {
+               "product": {
+                 "@media (min-width: 601px)": {
+                   "max-width": "calc(25% - 20px)",
+                   "margin-left": "20px",
+                   "margin-bottom": "50px",
+                   "width": "calc(25% - 20px)"
+                 },
+                 "img": {
+                   "height": "calc(100% - 15px)",
+                   "position": "absolute",
+                   "left": "0",
+                   "right": "0",
+                   "top": "0"
+                 },
+                 "imgWrapper": {
+                   "padding-top": "calc(75% + 15px)",
+                   "position": "relative",
+                   "height": "0"
+                 }
+               },
+               "title": {
+                 "color": "#ffffff"
+               },
+               "button": {
+         		"color": "#13e870",
+         		"border": "1px solid #007bff",
+                 "background-color": "rgba(0,0,0,0)",
+                 ":hover": {
+                   "background-color": "#007bff"
+                 },
+                 ":focus": {
+                   "background-color": "#007bff"
+                 }
+               },
+               "price": {
+                 "color": "#ffffff"
+               },
+               "compareAt": {
+                 "color": "#ffffff"
+               },
+               "unitPrice": {
+                 "color": "#ffffff"
+               }
+             },
+             "buttonDestination": "modal",
+             "contents": {
+               "options": false
+             },
+             "text": {
+               "button": "View product"
+             }
+           },
+           "productSet": {
+             "styles": {
+               "products": {
+                 "@media (min-width: 601px)": {
+                   "margin-left": "-20px"
+                 }
+               }
+             }
+           },
+           "modalProduct": {
+             "contents": {
+               "img": false,
+               "imgWithCarousel": true,
+               "button": false,
+               "buttonWithQuantity": true
+             },
+             "styles": {
+               "product": {
+                 "@media (min-width: 601px)": {
+                   "max-width": "100%",
+                   "margin-left": "0px",
+                   "margin-bottom": "0px"
+                 }
+               },
+               "button": {
+                 ":hover": {
+                   "background-color": "#006185"
+                 },
+                 "background-color": "#00394e",
+                 ":focus": {
+                   "background-color": "#006185"
+                 }
+               }
+             },
+             "text": {
+               "button": "Add to cart"
+             }
+           },
+           "cart": {
+             "styles": {
+               "button": {
+                 ":hover": {
+                   "background-color": "#006185"
+                 },
+                 "background-color": "#00394e",
+                 ":focus": {
+                   "background-color": "#006185"
+                 }
+               }
+             },
+             "text": {
+               "total": "Subtotal",
+               "button": "Checkout"
+             }
+           },
+           "toggle": {
+             "styles": {
+               "toggle": {
+                 "background-color": "#00394e",
+                 ":hover": {
+                   "background-color": "#006185"
+                 },
+                 ":focus": {
+                   "background-color": "#006185"
+                 }
+               }
+             }
+           }
+         },
+               });
+             });
+           }
+         })();
+         /*]]>*/
+      </script>
    </head>
    <body>
       <!-- top navigation bar-->
@@ -270,8 +268,8 @@
                      <div class="row">
                         <!-- governance-->
                         <div class="col-sm-12 col-lg-12 mt-3 text-center ">
-                           <a href="https://clv2d.clover.rocks" class="btn btn-outline-primary" role="button">CLV2D</a>
-                           <a href="https://clv3d.clover.rocks" class="btn btn-outline-primary" role="button">CLV3D</a>
+                           <a href="http://clv2d.cloverprotocol.biz/" class="btn btn-outline-primary" role="button">CLV2D</a>
+                           <a href="http://clv3d.cloverprotocol.biz/" class="btn btn-outline-primary" role="button">CLV3D</a>
                            <p></p>
                            <a href="https://snapshot.page/#/clover" class="btn btn-outline-primary" role="button">Governance</a>
                            <a href="https://uniswap.info/token/0x22222c03318440305ac3e8a7820563d6a9fd777f" class="btn btn-outline-primary" role="button">UniSwap</a>
@@ -346,23 +344,23 @@
                      <table class="table table-sm table-striped table-bordered table-hover">
                         <tbody>
                            <tr>
-                              <td>📃 <span class="text-monospace">Contract Address</span></td>
+                              <td>?? <span class="text-monospace">Contract Address</span></td>
                               <td><a class="text-monospace" href="https://etherscan.io/address/0x22222c03318440305ac3e8a7820563d6a9fd777f">0x22222C03318440305aC3e8a7820563d6A9FD777F</a></td>
                            </tr>
                            <tr>
-                              <td>🔑 <span class="text-monospace">Set Owner as Minter</span></td>
+                              <td>?? <span class="text-monospace">Set Owner as Minter</span></td>
                               <td><a class="text-monospace" href="https://etherscan.io/tx/0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7">0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7</a></td>
                            </tr>
                            <tr>
-                              <td>🍀 <span class="text-monospace">Mint 22,222 CLV</span></td>
+                              <td>?? <span class="text-monospace">Mint 22,222 CLV</span></td>
                               <td><a class="text-monospace" href="https://etherscan.io/tx/0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b">0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b</a></td>
                            </tr>
                            <tr>
-                              <td>🔥 <span class="text-monospace">Remove Owner as Minter</span></td>
+                              <td>?? <span class="text-monospace">Remove Owner as Minter</span></td>
                               <td><a class="text-monospace" href="https://etherscan.io/tx/0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216">0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216</a></td>
                            </tr>
                            <tr>
-                              <td>🔥 <span class="text-monospace">Burn Owner Address</span></td>
+                              <td>?? <span class="text-monospace">Burn Owner Address</span></td>
                               <td><a class="text-monospace" href="https://etherscan.io/tx/0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b">0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b</a></td>
                            </tr>
                         </tbody>
@@ -390,63 +388,29 @@
                      </ul>
                   </div>
                </div>
-					<br><br><br>
-					<center>Trust the plan.</center>
+               <br><br><br>
+               <center>Trust the plan.</center>
             </div>
-			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                <div class="row">
                   <div class="col-lg">
                      <h2>Contact</h2>
-                     <pre>
-Email: admin@clover.rocks
-PGP Fingerprint: 4A9E 6EAB C53B 6579 68D7 1D21 5512 1837 38CD 4026
-
------BEGIN PGP PUBLIC KEY BLOCK-----
-xsBNBF9zxtABCAC2VOy+f2qOasDmEcS/miRImRU/17ERoNVLMPqFJMcL7Vw3
-3hAjXhPFGedWnGwGy1a2u909741rLuOj5wpxL09sLld6k6av9zJddUROmHgK
-3bLWHkENOfHZ7PMbXW+ykJzuRQkJz5aHb0ATguwRkwvP577KUekaDPAgqGfQ
-/McEeSNbMltOKpUyh8U2ykFZcQ4zm97JZpghkaoaZG3qIloc3qJVLHBRqPua
-xrZVmifxF3VH4KLHtzTdnDrvUurm0K9RKf/sGRSbnsfBuiIo4NpA7MU0myfB
-fpThmhgbp2OUx6CecbrImyf9WMCeto04cNkOF1Kefbv0uQ7bhGBrlnaXABEB
-AAHNH2Nsb3ZlcmZpQHBtLm1lIDxjbG92ZXJmaUBwbS5tZT7CwI0EEAEIACAF
-Al9zxtAGCwkHCAMCBBUICgIEFgIBAAIZAQIbAwIeAQAhCRBVEhg3OM1AJhYh
-BEqebqvFO2V5aNcdIVUSGDc4zUAmj5AH/2p2DWPsxNQZEzDHWvouojAE16Nn
-i4jMyWKUkPlSug8QjTaGhT3dXHw+vLNuYy+0E1Np1vKXKi5W3UY/nFH4Q6nI
-q/ct5MIJXZYlggUuOehbLQDWUHYjXeI08UzaVvDAfCm441TjBYe2y4/cmDMy
-0b64Z4yJmrHmz9AskPapidi1tQMIiqmxa8iTCRcM7ScHvcj4H8lOKbkIuAZB
-pg1yniedJQjIss4NgCztXN3pWctppJUZPyVS8CbLrFzAxwwWXlvaLEJpKtTz
-lzuiHmBQ5MfqunN8ifDReX6XmJMwO/8V6jP+5ZkzjPHDbaW0aHLjBGvMqNAv
-zRS78ZukvJMzZovOwE0EX3PG0AEIAKTAnRPhDy1GRgD3Hz7ASfvllM3Zqwe6
-qT7I7R8HtVbbN7xzTLtK72fnGsdPXAOMiUGl4Azx85202xx9WaqcNZS7mhCP
-g2Yez3PrHvKhocHGo8f7HxBoNWAhYCJgT5NX3JPhQ9yKIHtjgL5u0bdm/LaN
-UTIk3FLr2EQEanJjbNh9jF31fYz0+TVaNYQjFKgcqc+NAF29bmGJjkKJrjH2
-E0oauKR+PfU0thFeEjSPI2lV8CWKoATjebzag9VIQrmIjvs9EiChlgdGYPQ9
-TbhagZRL4mckbqjxiufl8sTfYVTuBNJx7UlHGDymg2hQDqbSnBaKwzLjAvxS
-YlPwU4UO4Q8AEQEAAcLAdgQYAQgACQUCX3PG0AIbDAAhCRBVEhg3OM1AJhYh
-BEqebqvFO2V5aNcdIVUSGDc4zUAmufoIAK/rSEC1z2qy8Jz1jDXAldGK009P
-KKoH3IcKtjLuAxU1FMQ7otGpRMg0kSAMdLhMGj+g4kJooIVwMSQ8TFtsUshv
-Wc8m/OzhnBuzjFt4YsGOSDGqQJvTo2fVdGbs/XT6cSdRDR5p9yuP6krtlSXW
-wRXrEB4W58gx/dTr/yOY6img1iasZiphRIwA3uRPHOdgKoi+bMKzSRCHFbOt
-g5K8dhY0u3GRBTVMtLuyQA15Ghf3oSlHXpqj9Okc7bwRijyq2Dnjvr75/W5c
-kbPXmOrZU/ffvuA8WQAwSFCn7LzsmUrf5DHp8FoB0kWuIaEYmVcYQHUPZHOq
-V0rPj8aADYGbaKU=
-=nj6g
------END PGP PUBLIC KEY BLOCK-----
-</pre>
-					<br><br><br>
-                    <center>Trust the plan.</center>
+                     <p>
+                        Email: admin@cloverprotocol.biz<br>
+                        PGP Fingerprint: Coming soon
+                     </p>
+                     <br><br><br>
+                     <center>Trust the plan.</center>
                   </div>
                </div>
             </div>
-			<div class="tab-pane fade" id="swag" role="tabpanel" aria-labelledby="swag-tab">
+            <div class="tab-pane fade" id="swag" role="tabpanel" aria-labelledby="swag-tab">
                <div class="row">
                   <div class="col-lg">
                      <h2>Swag</h2>
-           					 <br><br><br>
-	                   <br><br><br>
-			               <br><br><br>
-	                   <div id='collection-component-1604180509996'></div>
-			               <br><br><br>
+					      <br>
+					      <div id='collection-component-1604180509996' style="height: 1000px"></div>
+					      <br><br><br>
                     <center>Trust the plan.</center>
                   </div>
                </div>
