@@ -2,7 +2,7 @@
 <html>
    <head>
       <title>Clover Protocol</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
       <meta property="og:title" content="Clover Protocol (CLV)" />
       <meta property="og:url" content="https://cloverprotocol.biz" />
       <meta property="og:type" content="website" />
@@ -18,166 +18,7 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-      <script type="text/javascript">
-         /*<![CDATA[*/
-         (function () {
-           var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-           if (window.ShopifyBuy) {
-             if (window.ShopifyBuy.UI) {
-               ShopifyBuyInit();
-             } else {
-               loadScript();
-             }
-           } else {
-             loadScript();
-           }
-           function loadScript() {
-             var script = document.createElement('script');
-             script.async = true;
-             script.src = scriptURL;
-             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-             script.onload = ShopifyBuyInit;
-           }
-           function ShopifyBuyInit() {
-             var client = ShopifyBuy.buildClient({
-               domain: 'cloverprotocol.myshopify.com',
-               storefrontAccessToken: '6adaa5abffee8b5ee40b64e78f8eac7e',
-             });
-             ShopifyBuy.UI.onReady(client).then(function (ui) {
-               ui.createComponent('collection', {
-                 id: '232855142576',
-                 node: document.getElementById('collection-component-1604180509996'),
-                 moneyFormat: '%24%7B%7Bamount%7D%7D',
-                 options: {
-           "product": {
-             "styles": {
-               "product": {
-                 "@media (min-width: 601px)": {
-                   "max-width": "calc(25% - 20px)",
-                   "margin-left": "20px",
-                   "margin-bottom": "50px",
-                   "width": "calc(25% - 20px)"
-                 },
-                 "img": {
-                   "height": "calc(100% - 15px)",
-                   "position": "absolute",
-                   "left": "0",
-                   "right": "0",
-                   "top": "0"
-                 },
-                 "imgWrapper": {
-                   "padding-top": "calc(75% + 15px)",
-                   "position": "relative",
-                   "height": "0"
-                 }
-               },
-               "title": {
-                 "color": "#ffffff"
-               },
-               "button": {
-         		"color": "#13e870",
-         		"border": "1px solid #007bff",
-                 "background-color": "rgba(0,0,0,0)",
-                 ":hover": {
-                   "background-color": "#007bff"
-                 },
-                 ":focus": {
-                   "background-color": "#007bff"
-                 }
-               },
-               "price": {
-                 "color": "#ffffff"
-               },
-               "compareAt": {
-                 "color": "#ffffff"
-               },
-               "unitPrice": {
-                 "color": "#ffffff"
-               }
-             },
-             "buttonDestination": "modal",
-             "contents": {
-               "options": false
-             },
-             "text": {
-               "button": "View product"
-             }
-           },
-           "productSet": {
-             "styles": {
-               "products": {
-                 "@media (min-width: 601px)": {
-                   "margin-left": "-20px"
-                 }
-               }
-             }
-           },
-           "modalProduct": {
-             "contents": {
-               "img": false,
-               "imgWithCarousel": true,
-               "button": false,
-               "buttonWithQuantity": true
-             },
-             "styles": {
-               "product": {
-                 "@media (min-width: 601px)": {
-                   "max-width": "100%",
-                   "margin-left": "0px",
-                   "margin-bottom": "0px"
-                 }
-               },
-               "button": {
-                 ":hover": {
-                   "background-color": "#006185"
-                 },
-                 "background-color": "#00394e",
-                 ":focus": {
-                   "background-color": "#006185"
-                 }
-               }
-             },
-             "text": {
-               "button": "Add to cart"
-             }
-           },
-           "cart": {
-             "styles": {
-               "button": {
-                 ":hover": {
-                   "background-color": "#006185"
-                 },
-                 "background-color": "#00394e",
-                 ":focus": {
-                   "background-color": "#006185"
-                 }
-               }
-             },
-             "text": {
-               "total": "Subtotal",
-               "button": "Checkout"
-             }
-           },
-           "toggle": {
-             "styles": {
-               "toggle": {
-                 "background-color": "#00394e",
-                 ":hover": {
-                   "background-color": "#006185"
-                 },
-                 ":focus": {
-                   "background-color": "#006185"
-                 }
-               }
-             }
-           }
-         },
-               });
-             });
-           }
-         })();
-         /*]]>*/
-      </script>
+ 
    </head>
    <body>
       <!-- top navigation bar-->
@@ -250,11 +91,16 @@
                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" id="swag-tab" data-toggle="tab" href="#swag" role="tab" aria-controls="contact" aria-selected="false">Swag</a>
+               <a class="nav-link" href="https://cloverstore.ogn.app/" role="tab" target="_blank">Swag</a>
             </li>
 			<li class="nav-item">
                <a class="nav-link" id="airdrops-tab" data-toggle="tab" href="#airdrops" role="tab" aria-controls="airdrops" aria-selected="false">Weekly NFT Airdrop</a>
             </li>
+			
+			<li class="nav-item">
+               <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">NFT Marketplace</a>
+            </li>
+			
          </ul>
          <!-- Tab content-->
          <div class="tab-content mt-2" id="myTabContent">
@@ -347,23 +193,23 @@
                         <tbody>
                            <tr>
                               <td>?? <span class="text-monospace">Contract Address</span></td>
-                              <td><a class="text-monospace" href="https://etherscan.io/address/0x22222c03318440305ac3e8a7820563d6a9fd777f">0x22222C03318440305aC3e8a7820563d6A9FD777F</a></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/address/0x22222c03318440305ac3e8a7820563d6a9fd777f" target="_blank">0x22222C03318440305aC3e8a7820563d6A9FD777F</a></td>
                            </tr>
                            <tr>
                               <td>?? <span class="text-monospace">Set Owner as Minter</span></td>
-                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7">0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7</a></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7" target="_blank">0x8d788b865044cae94c0b758f4cc2c70b57ecf86fd9f2cee26b37d03b8af323c7</a></td>
                            </tr>
                            <tr>
                               <td>?? <span class="text-monospace">Mint 22,222 CLV</span></td>
-                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b">0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b</a></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b" target="_blank">0xf57b90ceb2aff142aa7654fccc960e0f9d9fd804b952667410910c00022dce0b</a></td>
                            </tr>
                            <tr>
                               <td>?? <span class="text-monospace">Remove Owner as Minter</span></td>
-                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216">0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216</a></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216" target="_blank">0xb9e8cb3f02be9b00a075581159de88527859075f6b62cda825913733c8078216</a></td>
                            </tr>
                            <tr>
                               <td>?? <span class="text-monospace">Burn Owner Address</span></td>
-                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b">0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b</a></td>
+                              <td><a class="text-monospace" href="https://etherscan.io/tx/0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b" target="_blank">0x6b56cf74d8a8cb2071f5562bc2242277736ee19ac9210ecaddbfa9953bf69a1b</a></td>
                            </tr>
                         </tbody>
                      </table>
@@ -393,30 +239,7 @@
                <br><br><br>
                <center>Trust the plan.</center>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-               <div class="row">
-                  <div class="col-lg">
-                     <h2>Contact</h2>
-                     <p>
-                        Email: admin@cloverprotocol.biz<br>
-                        PGP Fingerprint: Coming soon
-                     </p>
-                     <br><br><br>
-                     <center>Trust the plan.</center>
-                  </div>
-               </div>
-            </div>
-            <div class="tab-pane fade" id="swag" role="tabpanel" aria-labelledby="swag-tab">
-               <div class="row">
-                  <div class="col-lg">
-                     <h2>Swag</h2>
-					      <br>
-					      <div id='collection-component-1604180509996' style="height: 1000px"></div>
-					      <br><br><br>
-                    <center>Trust the plan.</center>
-                  </div>
-               </div>
-            </div>
+
 			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                <div class="row">
                   <div class="col-lg">
@@ -440,7 +263,6 @@
 					<a href="#howwork"><span style="font-weight: bold;">How Does It Work</span></a>&nbsp;&nbsp;
 					<a href="#when"><span style="font-weight: bold;">When Are They</span></a>&nbsp;&nbsp;
 					<a href="#form"><span style="font-weight: bold;">Airdrop Form</span></a>&nbsp;&nbsp;
-					<a href="#market"><span style="font-weight: bold;">NFT Marketplace</span></a>
 					<br/><br/><br/>
 					 
                      <b>The Sprout of a Clover</b><br/>
@@ -610,7 +432,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">107<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">107<br>
+<td style="text-align: center; vertical-align: middle;">55<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">55<br>
 </td>
@@ -625,7 +447,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">118<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">118<br>
+<td style="text-align: center; vertical-align: middle;">60.5<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">60.5<br>
 </td>
@@ -639,7 +461,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">129<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">129<br>
+<td style="text-align: center; vertical-align: middle;">66<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">66<br>
 </td>
@@ -653,7 +475,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">140<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">140<br>
+<td style="text-align: center; vertical-align: middle;">71.5<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">71.5<br>
 </td>
@@ -667,7 +489,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">151<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">151<br>
+<td style="text-align: center; vertical-align: middle;">77<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">77<br>
 </td>
@@ -681,7 +503,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">162<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">162<br>
+<td style="text-align: center; vertical-align: middle;">82.5<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">82.5<br>
 </td>
@@ -695,7 +517,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">173<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">173<br>
+<td style="text-align: center; vertical-align: middle;">88<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">88<br>
 </td>
@@ -709,7 +531,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">184<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">184<br>
+<td style="text-align: center; vertical-align: middle;">93.5<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">93.5<br>
 </td>
@@ -723,7 +545,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">195<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">195<br>
+<td style="text-align: center; vertical-align: middle;">99<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">99<br>
 </td>
@@ -737,7 +559,7 @@ style="vertical-align: top; font-weight: bold; text-decoration: underline; text-
 <td
 style="text-align: center; vertical-align: middle; width: 15%;">206<br>
 </td>
-<td style="text-align: center; vertical-align: middle;">206<br>
+<td style="text-align: center; vertical-align: middle;">104.5<br>
 </td>
 <td style="text-align: center; vertical-align: middle;">104.5<br>
 </td>
@@ -759,8 +581,13 @@ style="text-align: center; vertical-align: middle; width: 15%;">206<br>
 					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZ_UEMhj3iE_yu2Mneg556W644UHcGN8kgNpHmpCBYOYhHSQ/viewform?embedded=true" height="1250" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
 					</iframe>
 					 </center>
-				
-				<a name="market"></a><br/>
+                  </div>
+               </div>
+         </div>
+		 
+           <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+               <div class="row">
+                  <div class="col-lg">
 					<h2>Clover NFT Marketplace</h2>
 					 <br/>
                      Did you miss a week of the NFT Airdrops? Did you not get that Gold Animated Foil version that you just have to have? Well now you have a chance to get the ones you missed! The Clover NFT Marketplace is now open on Atomichub.
@@ -786,11 +613,10 @@ style="text-align: center; vertical-align: middle; width: 15%;">206<br>
 			
 
 				<center><h4>Trust the Plan!</h4></center>
-			
                   </div>
                </div>
-			
-         </div>
+            </div>		 
+		 
       </div>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
