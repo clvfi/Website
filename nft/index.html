@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Clover Protocol NFT MarketPlace</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta property="og:title" content="Clover Protocol (CLV)" />
+      <meta property="og:url" content="https://cloverprotocol.biz" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Clover has been doing a 16 week long NFT Trading card Airdrop. This is our marketplace to buy the NFTs we have been Airdropping." />
+      <meta property="og:image" content="https://nft.cloverprotocol.biz/logo.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cloverprotocol.biz/css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<style>
+
+:root {
+    --bg-table-stripe: #f6f6f5;
+    --b-table: #e3e3e2;
+    --caption: #242423;
+}
+
+table {
+    background-color: transparent;
+    border-collapse:collapse;
+  	font-family: Arial, Helvetica, sans-serif
+}
+
+th {
+    text-align:left
+}
+
+	.dcf-txt-center {
+      text-align: center!important
+    }
+
+    .dcf-txt-left {
+      text-align: left!important
+    }
+
+    .dcf-txt-right {
+      text-align: right!important
+    }
+    
+.dcf-table caption {
+      color: var(--caption);
+      font-size: 1.13em;
+      font-weight: 700;
+      padding-bottom: .56rem
+    }
+
+    .dcf-table thead {
+      font-size: .84em
+    }
+
+    .dcf-table tbody {
+      border-bottom: 1px solid var(--b-table);
+      border-top: 1px solid var(--b-table);
+      font-size: .84em
+    }
+
+    .dcf-table tfoot {
+      font-size: .84em
+    }
+
+
+    .dcf-table-bordered, .dcf-table-bordered td, .dcf-table-bordered th {
+      border: 1px solid var(--b-table)
+    }
+
+    .dcf-table-bordered td, .dcf-table-bordered th, .dcf-table-striped td, .dcf-table-striped th {
+      padding-left: 1em;
+      padding-right: 1em
+    }
+
+    .dcf-table-bordered tr:not(:last-child), .dcf-table-striped tr:not(:last-child) {
+      border-bottom: 1px solid var(--b-table)
+    }
+
+    .dcf-table-striped tbody tr:nth-of-type(2n) {
+      background-color: var(--bg-table-stripe)
+    }
+
+    .dcf-table thead td, .dcf-table thead th {
+      padding-bottom: .75em;
+      vertical-align: bottom
+    }
+
+    .dcf-table tbody td, .dcf-table tbody th, .dcf-table tfoot td, .dcf-table tfoot th {
+      padding-top: .75em;
+      vertical-align: top
+    }
+
+    .dcf-table tbody td, .dcf-table tbody th {
+      padding-bottom: .75em
+    }
+
+    .dcf-table-bordered thead th {
+      padding-top: 1.33em
+    }
+
+    .dcf-wrapper-table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      padding-bottom: 1em;
+      position: relative;
+      right: 50%;
+      width: 100vw
+    }
+
+    @media only screen and (max-width:42.09em) {
+      .dcf-table-responsive thead {
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap
+      }
+      .dcf-table-responsive tr {
+        display: block
+      }
+      .dcf-table-responsive td {
+        -webkit-column-gap: 3.16vw;
+        -moz-column-gap: 3.16vw;
+        column-gap: 3.16vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: left!important
+      }
+      .dcf-table-responsive.dcf-table-bordered, .dcf-table-responsive.dcf-table-bordered thead th {
+        border-width: 0
+      }
+      .dcf-table-responsive.dcf-table-bordered tbody td {
+        border-top-width: 0
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered) tbody tr {
+        padding-bottom: .75em
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered) tbody td {
+        padding-bottom: 0
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered):not(.dcf-table-striped) tbody td {
+        padding-right: 0
+      }
+      .dcf-table-responsive.dcf-table-bordered tbody tr:last-child td:last-child {
+        border-bottom-width: 0
+      }
+      .dcf-table-responsive tbody td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 700;
+        padding-right: 1.78em
+      }
+    }
+
+.dcf-overflow-x-auto {
+      overflow-x: auto!important;
+      -webkit-overflow-scrolling: touch
+    }
+</style>
+
+	<style type="text/css">
+		#week {
+			font-size: large;
+			}
+
+		#title {
+			font-size: large;
+			}
+
+		#rcorners1 {
+			border-radius: 15px;
+			background: #0B3641;
+
+			}
+			
+		table { 
+			border-spacing: 20px 40px;
+			border-collapse: separate;
+			}	
+	</style>
+
+   </head>
+   <body>
+      <!-- top navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bglight ">
+         <a target="_blank" class="nav-link text-white" href="http://cloverprotocol.biz"><img src="media/logo.png" width="40" /> CloverProtocol.biz</a>
+		 
+		 <img src="media/NFTMarket-logo1.png" />
+		 
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <!-- Uniswap -->
+                  <a target="_blank" href="https://uniswap.info/token/0x22222c03318440305ac3e8a7820563d6a9fd777f" role="button" title="Uniswap"><img src="media/uni.png" style="padding: 0px;padding-top: 2px;"></a>
+               </li>
+               <li class="nav-item">
+                  <!-- Coingecko -->
+              <a target="_blank" href="https://www.coingecko.com/en/coins/clover" role="button" title="Coingecko"><img src="media/coingecko.png" style="padding: 0px;padding-top: 5px;"></a>
+               </li>
+               <li class="nav-item">
+                  <!-- telegram-->
+                  <a target="_blank" href="https://t.me/clvfi" class="" role="button" title="Telegram"><i class="fab fa-telegram"></i></a>
+               </li>
+
+               </li>
+               <li class="nav-item">
+                  <!-- twitter -->
+                  <a target="_blank" href="https://twitter.com/clvbiz" class="" role="button" title="Twitter"><i class="fab fa-twitter"></i></a>
+               </li>
+               <!-- GIT -->
+               <li class="nav-item">
+                  <a target="_blank" href="https://github.com/clvfi" class="" role="button" title="Contract"><i class="fab fa-github"></i></a>
+               </li>
+               <!-- biz -->
+               <li class="nav-item">
+                  <a target="_blank" href="https://boards.4channel.org/biz/catalog#s=clv" class="text-white " role="button" title="/Biz/"><img src="media/4chan.png" style="padding: 0px;padding-top: 5px;"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- End top bar-->
+      <!-- animated css bg-->
+      <div class="area" >
+         <ul class="circles">
+            <li><img src="media/bg/logo.png" width="50px"></li>
+            <li><img src="media/bg/sminem.png" width="50px"></li>
+            <li><img src="media/bg/sminem.png" width="50px"></li>
+            <li><img src="media/bg/tad.png" width="50px"></li>
+            <li><img src="media/bg/bog.png" width="50px"></li>
+            <li><img src="media/bg/logo.png" width="50px"></li>
+            <li><img src="media/bg/bog.png" width="50px"></li>
+            <li><img src="media/bg/tad.png" width="50px"></li>
+         </ul>
+      </div >
+      <div class="main-clv m-2">
+         <!-- Link Tabs-->
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">NFT Marketplace</a>
+            </li>
+			<li class="nav-item">
+               <a class="nav-link" id="whatwax-tab" data-toggle="tab" href="#whatwax" role="tab" aria-controls="buywax" aria-selected="false">What Is Wax</a>
+            </li>
+			<li class="nav-item">
+               <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">Buy Wax (WAXP)</a>
+            </li>
+         </ul>
+         <!-- Tab content-->
+         <div class="tab-content mt-2" id="myTabContent">		 
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               <div class="row">
+                  <div class="col-lg">
+				  
+			Did you miss a week of the NFT Airdrops? Did you not get that Gold Animated Foil version that you just have to have? Well now you have a chance to get the ones you missed! The Clover NFT Marketplace is now open on Atomichub!
+			<br/></br/>
+			Original minting of the NFT's was VERY LIMITED. After each weeks NFT minting, no more of that weeks NFT can EVER be minted again, by the contract! There aren't too many available. Once they are gone, they are GONE! Get them while you can!
+			<br/><br/>
+			<b>COMMING SOON :</b> A Complete Set of ALL of the NFT's.
+					 
+			<table class="dcf-table dcf-table-responsive dcf-w-80%" style="width: 80%; text-align: left; margin-left: auto; margin-right: auto;"
+			 border="0" cellpadding="4" cellspacing="15">
+			<tbody>
+			<tr>
+			
+			
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 1</b><br>
+				  <img style="padding: 10px;" src="media/week-1.png"><br>
+				  <strong id="title"> Cloverchan</strong><br>
+				  <a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Cloverchan&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a></span></td>
+				  
+
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span> <b id="week">Week  1</b><br>
+				  <img style="padding: 10px;" src="media/week-1_foil.png"><br>
+				  <strong id="title">Cloverchan FOIL<br>
+				  </strong> <a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Cloverchan%20foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" target="target=&quot;_blank&quot;" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 2</b><br>
+				  <img style="padding: 10px;" src="media/week-2.png"><br>
+				  <strong id="title">4chan Pass</strong><br>
+				  <a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=4chan%20Pass&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 2</b><br>
+				  <img style="padding: 10px;" src="media/week-2_foil.png"><br>
+				  <strong id="title">4chan Pass FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=4chan%20Pass%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 3</b><br>
+				  <img style="padding: 10px;" src="media/week-3.png"><br>
+				  <strong id="title">Pepe the Frog<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pepe%20the%20Frog&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 3</b><br>
+				  <img style="padding: 10px;" src="media/week-3_foil.png"><br>
+				  <strong id="title">Pepe the Frog FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pepe%20the%20Frog%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 4</b><br>
+				  <img style="padding: 10px;" src="media/week-4.png"><br>
+				  <strong id="title">Pink Wojak<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pink%20Wojak&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 4</b><br>
+				  <img style="padding: 10px;" src="media/week-4_foil.png"><br>
+				  <strong id="title">Pink Wojak FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pink%20Wojak%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 5</b><br>
+				  <img style="padding: 10px;" src="media/week-5.png"><br>
+				  <strong id="title">Yotsuba Koiwai<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Yotsuba%20Koiwai&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 5</b><br>
+				  <img style="padding: 10px;" src="media/week-5_foil.png"><br>
+				  <strong id="title">Yotsuba Koiwai Foil<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Yotsuba%20Koiwai%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 6</b><br>
+				  <img style="padding: 10px;" src="media/week-6.png"><br>
+				  <strong id="title">Pools Closed<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pools%20Closed&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 6</b><br>
+				  <img style="padding: 10px;" src="media/week-6_foil.png"><br>
+				  <strong id="title">Pools Closed FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pools%20Closed%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 7</b><br>
+				  <img style="padding: 10px;" src="media/week-7.png"><br>
+				  <strong id="title">Wryyyyyyy<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Wryyyyyyy&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+
+
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 7</b><br>
+				  <img style="padding: 10px;" src="media/week-7_foil.png"><br>
+				  <strong id="title">Wryyyyyyy FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Wryyyyyyy%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 8</b><br>
+				  <img style="padding: 10px;" src="media/week-8.png"><br>
+				  <strong id="title">Shoop Da Whoop<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Shoop%20Da%20Whoop&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 8</b><br>
+				  <img style="padding: 10px;" src="media/week-8_foil.png"><br>
+				  <strong id="title">Shoop Da Whoop FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Shoop%20Da%20Whoop%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 9</b><br>
+				  <img style="padding: 10px;" src="media/week-9.png"><br>
+				  <strong id="title">Mudkip<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Mudkip&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 9</b><br>
+				  <img style="padding: 10px;" src="media/week-9_foil.png"><br>
+				  <strong id="title">Mudkip FOIL<br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Mudkip%20FOIL&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 10</b><br>
+				  <img style="padding: 10px;" src="media/week-10.png"><br>
+				  <span style="font-weight: bold;">Pedobear</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pedobear&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a><br>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 10</b><br>
+				  <img style="padding: 10px;" src="media/week-10_foil.png"><br>
+				  <span style="font-weight: bold;">Pedobear Foil</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Pedobear%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a><br>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 11</b><br>
+				  <img style="padding: 10px;" src="media/week-11.png"><br>
+				  <span style="font-weight: bold;">Desu</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Desu&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a><br>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 11</b><br>
+				  <img style="padding: 10px;" src="media/week-11_foil.png"><br>
+				  <span style="font-weight: bold;">Desu Foil</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Desu%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a><br>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 12</b><br>
+				  <img style="padding: 10px;" src="media/week-12.png"><br>
+				  <span style="font-weight: bold;">W.T. Snaks</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=W.T.%20Snacks&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 12</b><br>
+				  <img style="padding: 10px;" src="media/week-12_foil.png"><br>
+				  <span style="font-weight: bold;">W.T. Snaks Foil</span><span style="font-weight: bold;"></span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=W.T.%20Snacks%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 13</b><br>
+				  <img style="padding: 10px;" src="media/week-13.png"><br>
+				  <span style="font-weight: bold;">Epic Fail Guy</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Epic%20Fail%20Guy&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 13</b><br>
+				  <img style="padding: 10px;" src="media/week-13_foil.png"><br>
+				  <span style="font-weight: bold;">Epic Fail Guy Foil</span><span style="font-weight: bold;"></span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Epic%20Fail%20Guy%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 14</b><br>
+				  <img style="padding: 10px;" src="media/week-14.png"><br>
+				  <span style="font-weight: bold;">Giga Pudding</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Giga%20Pudding&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 14</b><br>
+				  <img style="padding: 10px;" src="media/week-14_foil.png"><br>
+				  <span style="font-weight: bold;">Giga Pudding Foil</span><span style="font-weight: bold;"></span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Giga%20Pudding%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 15</b><br>
+				  <img style="padding: 10px;" src="media/week-15.png"><br>
+				  <span style="font-weight: bold;">Triforce</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Triforce&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 15</b><br>
+				  <img style="padding: 10px;" src="media/week-15_foil.png"><br>
+				  <span style="font-weight: bold;">Triforce Foil</span><span style="font-weight: bold;"></span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&amp;match=Triforce%20Foil&amp;order=asc&amp;seller=fwpay.wam&amp;sort=created&amp;symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 16</b><br>
+				  <img style="padding: 10px;" src="media/week-16.png"><br>
+				  <span style="font-weight: bold;">Chadmin</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&match=Chadmin&order=asc&seller=fwpay.wam&sort=created&symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+			<td class="dcf-txt-center" id="rcorners1" style="text-align: center; vertical-align: middle;">
+			<span><b id="week">Week 16</b><br>
+				  <img style="padding: 10px;" src="media/week-16_foil.png"><br>
+				  <span style="font-weight: bold;">Chadmin Foil</span><strong id="title"><br>
+				  </strong><a target="_blank" href="https://wax.atomichub.io/market?collection_name=cloversprout&match=Chadmin%20Foil&order=asc&seller=fwpay.wam&sort=created&symbol=WAX"><strong><img src="media/buynow.png" alt="" style="border: 0px solid ; padding-top: 10px; padding-bottom: 10px;"></strong></a>
+				  </span></td>
+		</tr>
+	</tbody>
+</table>
+					 
+                     <br/><br/>
+
+					 <center><h4>Trust the Plan!</h4></center>
+                  </div>
+               </div>
+            </div>			
+					
+			<div class="tab-pane fade" id="whatwax" role="tabpanel" aria-labelledby="whatwax-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2><img alt="" src="media/wax_logo-sm.png" style="width: 40px; height: 40px;" hspace="8">What IS Wax</h2>
+					<br/>
+                     WAX stands for Worldwide Asset eXchange and is a blockchain specifically made for trading virtual items such as rare and collectible items in video games and virtual worlds.
+					<br/><br/>
+					 WAX is the King of NFTs! The WAX Blockchain is the safest and most convenient way to create, buy, sell, and trade NFTs - to anyone, anywhere in the world! WAX IS FAST! An average TX takes about 5 seconds, and cost only pennies!
+					<br/><br/>
+					WAX has created a full suite of blockchain-based tools that allows anyone to trade NFTs instantly and securely, to anyone, anywhere. These include an easy-to-use WAX Cloud Wallet where accounts can be created in just two clicks using social log-ins, a robust developer portal and more.
+					<br/><br/>
+					Participants of the Worldwide Asset eXchange gain access to a global community of collectors and traders, buyers and sellers, creators and gamers, merchants, dApp creators and game developers. For more information, please visit <a target="_blank" href="https://wax.io">https://wax.io</a>, and follow along on <a target="_blank"
+					 href="https://www.globenewswire.com/Tracker?data=PTCfoht1tnSStrzWZJ8wqL_GYIlWI6Kd_ecYCAmm5nhXvQ7SpWA1OyyGZTzekkPv_4VTKviqWDC-5sNibUcf6w==">Twitter</a> and <a target="_blank"
+					 href="https://www.globenewswire.com/Tracker?data=3QHcrlr6th3QAZ1qCS_AFLku2Zs5ZQILMCVz0c2DBq4aKEKCc88jA7liqnDOWc5QCvEeFpumlibPjg8oBxoprQ==">Telegram</a>.<br>
+					 <br/>
+                  </div>
+               </div>
+				
+							<br/><br/><br/>
+							<center><h4>Trust the Plan!</h4></center>
+					
+         </div>
+		 
+		 
+		    <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+               <div class="row">
+                  <div class="col-lg">
+                     <h2><img alt="" src="media/wax_logo-sm.png" style="width: 40px; height: 40px;" hspace="8">How To Buy</h2>
+					
+					<a href="#wallet"><span style="font-weight: bold;">Buy In Wallet</span></a>&nbsp;&nbsp;
+					<a href="#exchange"><span style="font-weight: bold;">Buy At An Exchange</span></a>&nbsp;&nbsp;
+					<a href="#swap"><span style="font-weight: bold;">Use A Swap Service</span></a>&nbsp;&nbsp;
+					<br/><br/>
+					To buy Clover NFT's you will need to get Wax (WAXP) token first. The entire Atomichub marketplace only takes Wax (WAXP) token for payment. Get yourself a Wax wallet, and then get yourself some Wax (WAXP) token. Now go shopping for your Clover NFT's!
+					<br/><br/>
+                    First and foremost, to use Wax you will need a wax wallet. Get a Wax wallet in 2 clicks here:
+					 <br/>
+					 <a target="_blank" href="https://all-access.wax.io">https://all-access.wax.io</a>.
+					 <br/><br/>
+					<a name="wallet"></a><br>
+					<h4>Buy In Wax Wallet</h4>
+					You can buy WAX tokens (WAXP) directly from within the WAX Cloud Wallet using a credit card or other crypto.
+					<br/><br/>
+					<h5>Here's How:</h5>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">Open the WAX Cloud Wallet<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">Click "Buy WAXP" on the right hand side. On mobile, click the WAX logo in the top right corner.<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">Choose one of the 3rd party payment options.<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">Pay with Fiat (e.g. credit card): Simplex / Moonpay<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">If you’re asked which account the tokens should be sent to, enter your own wallet name (wallet.wam).<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4">You might also be asked what to put in the transfer memo, what you enter there is not important.
+					
+					<br/><br/><br/>
+					<a name="exchange"></a><br>
+					<h4>Buy At An Exchange</h4>
+					WAXP is listed on multiple cryptocurrency exchanges. Using them is only recommended for advanced users, but can give you more control and slightly better exchange rates.<br/><br/>
+					Popular Exchanges for WAXP:<br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4"><a target="_blank" href="https://global.bittrex.com/">Bittrex</a><br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4"><a target="_blank" href="https://www.huobi.com/en-us/">Huobi</a><br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4"><a target="_blank" href="https://www.kucoin.com/">Kucoin</a><br/><br/>
+					When withdrawing WAXP tokens from the exchange, enter your wallet name (<i>wallet</i>.wam). You might also be asked what to put in the transfer memo, what you enter there is not important.
+					<br/><br/><br/>
+					
+					<a name="swap"></a><br>
+					<h4>Use A Swap Service</h4> 
+					There are several Swap service that you can get WAXP at. These are crypto to crypto exchanges that can exchange most tokens for Wax (WAXP).<br/><br/>
+					Here are the best Swap services for (WAXP):<br/>
+					
+					<img alt="" src="media/arrow1-sm.png" hspace="4"><a target="_blank" href="https://swapspace.co/?to=waxp&amount=0.25&from=eth">SwapSpace</a><br/>
+					<img alt="" src="media/arrow1-sm.png" hspace="4"><a target="_blank" href="https://changenow.io/">Changenow</a>
+					
+					<br/><br/><br/>
+                     <center><h4>Trust the Plan!</h4></center>
+                  </div>
+               </div>
+            </div>
+		 
+      </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js" integrity="sha512-ppuvbiAokEJLjOUQ24YmpP7tTaLRgzliuldPRZ01ul6MhRC+B8LzcVkXmUsDee7ne9chUfApa9/pWrIZ3rwTFQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   </body>
+</html>
